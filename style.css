@@ -20,13 +20,78 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Source Serif Pro";
+    line-height: 26px;
+    color: #333;
+    margin: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+}
+
+.headline {
+    font-family: "Roboto Slab";
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.subheadline {
+    font-family: "Roboto";
+    font-size: 17px;
+    line-height: 23px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.article-header__leadart {
+    margin-bottom: 20px;
+}
+
+.article-header__leadart__img {
     width: 100%;
-    margin: 0 auto;
+}
+
+.article-header__leadart__caption {
+    font-family: "Roboto";
+    font-size: 13px;
+    line-height: 16px;
+    color: #999;
+    margin-top: 0;
+}
+
+.byline {
+    font-style: italic;
+    font-weight: light;
+}
+
+.dateline {
+    color: #666;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 0;
+}
+
+.content {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.figure {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dataexplainer {
+    font-size: 12px;
+    font-weight: light;
+    padding-top: 0px;
+    margin: 0;
+    line-height: 1;
 }
 
 /*********************************************************************

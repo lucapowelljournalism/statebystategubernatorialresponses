@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>HTML Skeleton</title>
+    <title>How have different states responded to Covid-19?</title>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,9 +25,57 @@
 
   <body>
     <!-- YOUR CONTENT GOES HERE -->
-    <div class="figure">
-      <iframe title="State-by-state Gubernatorial Responses to Covid-19" aria-label="USA states choropleth map" src="//datawrapper.dwcdn.net/xg0DD/3/" scrolling="no" frameborder="0" style="border: none;" width="900" height="522"></iframe>
+    <div class="container">
+      <h1 class="headline">How have different states responded to Covid-19?</h1>
+      <h3 class="subheadline">California has gone on total lockdown while other states are relying on 'common sense'.</h3>
     </div>
+
+    <div class="container article-header__leadart">
+      <img class="article-header__leadart__img" src="newsom.jpg" alt="Vote here" />
+      <p class="article-header__leadart__caption">
+        Governor Gavin Newsom of California instituted a statewide lockdown in March. Photo:JD Lasica/Flickr
+      </p>
+    </div>
+
+    <div class="container content">
+      <p class="byline">By Luca Powell</p>
+      <p class="dateline">Published March 22, 2020 10:30 AM</p>
+      <br>
+      In the wake of <a href="https://www.reuters.com/article/us-health-coronavirus-mixed-messages/like-the-flu-trumps-coronavirus-messaging-confuses-public-pandemic-researchers-say-idUSKBN2102GY">mixed-messaging</a> from the federal government,
+      state governors have taken the lead in response to Covid-19.
+      <br><br>
+      On a state-by-state basis many of those actions look quite different. Some of this makes sense. In Washington, one of the first states hit by a significant community spread vector in late February, Governor Jay Inslee was one of the first to
+      declare a state of emergency. Mississippi, meanwhile, only closed school on Thursday, March 19th (This despite the governor himself being self-quarantined).<br><br> California’s on lockdown, Montana is finally out of denial, and Virginia thinks
+      a
+      <a href="https://www.whsv.com/content/news/Gov-Northam-set-to-address-Virginia-after-51-confirmed-COVID-19-cases-2-deaths-568862491.html">10-person limit</a> in bars and restaurants is enough to do the trick.
+      <br><br>
+      You can check out gubernatorial responses in this map. Just mouse over each state to see what policies have been enacted. Darker states indicate a more aggressive state response.
+
+    </div>
+
+    <div class="figure container">
+      <iframe title="State-by-state Gubernatorial Responses to Covid-19" aria-label="USA states choropleth map" id="datawrapper-chart-xg0DD" src="//datawrapper.dwcdn.net/xg0DD/3/" scrolling="no" frameborder="0"
+        style="width: 0; min-width: 100% !important; border: none;" height="522"></iframe>
+      <script type="text/javascript">
+        ! function() {
+          "use strict";
+          window.addEventListener("message", function(a) {
+            if (void 0 !== a.data["datawrapper-height"])
+              for (var e in a.data["datawrapper-height"]) {
+                var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+              }
+          })
+        }();
+      </script>
+    </div>
+
+    <div class="container content">
+      <p class="dataexplainer">
+        Data: Data for this was collected from the Covid-19 Tracking Project, the CDC, and Wallethub. Wallethub scored each state’s response across <a href="https://wallethub.com/edu/most-aggressive-states-against-coronavirus/72307/">35 metrics</a>.
+      </p>
+    </div>
+
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
